@@ -13,6 +13,14 @@
                 "classList.has('TaskCell--completed')": {"<-": "task.completed"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
         "checkbox": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
@@ -40,6 +48,7 @@
     <div data-montage-id="owner" class="TaskCell">
         <input type="checkbox" data-montage-id="checkbox">
         <input data-montage-id="textField" type="text">
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
